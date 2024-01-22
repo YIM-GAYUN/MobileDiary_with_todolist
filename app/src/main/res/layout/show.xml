@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 날짜  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0D2D84"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:text="일자 "
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:orientation="vertical"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+    </LinearLayout>
+
+    <!-- 일기내용  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="396dp"
+        android:background="@drawable/paper"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:hint="daily to do"
+            android:inputType="textMultiLine"
+            android:visibility="invisible"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!-- 저장버튼 -->
+        <Button
+
+            android:id="@+id/bprevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="previousData"
+            android:backgroundTint="#0D2D84"
+            android:textSize="22dp"
+            android:textColor="@color/white"
+            android:text="이전 메모" />
+        <!-- 저장버튼 -->
+        <Button
+            android:id="@+id/bnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0D2D84"
+            android:onClick="nextData"
+            android:textSize="22dp"
+            android:textColor="@color/white"
+            android:text="다음 메모" />
+
+
+
+        <!-- 수정버튼 -->
+        <Button
+            android:id="@+id/bmodify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0D2D84"
+            android:onClick="modifyData"
+            android:textSize="22dp"
+            android:textColor="@color/white"
+            android:text="메모 수정" />
+
+    </LinearLayout>
+
+</LinearLayout>

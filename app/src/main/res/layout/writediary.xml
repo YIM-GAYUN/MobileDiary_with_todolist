@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#1A5E91"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A5E91"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/mdate"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+        <!-- 날짜 입력하기 -->
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- 일기 쓰기 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="416dp"
+        android:background="@drawable/paper"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/mcontent"
+            android:textColorHint="#808080"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/edit_dairy"
+            android:layout_width="fill_parent"
+            android:layout_height="367dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <!-- 저장 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <!-- 저장버튼 -->
+        <Button
+            android:id="@+id/button_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="saveData"
+            android:backgroundTint="#3987C0"
+            android:textSize="22dp"
+            android:textColor="@color/white"
+            android:text="저장" />
+    </LinearLayout>
+    <!-- 저장버튼 끝 -->
+
+</LinearLayout>

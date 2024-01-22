@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/back1"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#00000000"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="0dp">
+
+        <com.jetradarmobile.snowfall.SnowfallView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            app:snowflakeAlphaMax="255"
+            app:snowflakeAlphaMin="150"
+            app:snowflakeAngleMax="5"
+            app:snowflakeImage="@drawable/snow"
+            app:snowflakeSizeMax="32dp"
+            app:snowflakeSizeMin="8dp"
+            app:snowflakeSpeedMax="5"
+            app:snowflakeSpeedMin="2"
+            app:snowflakesAlreadyFalling="false"
+            app:snowflakesFadingEnabled="true"
+            app:snowflakesNum="130" />
+
+    <LinearLayout
+        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/buttonRow">
+
+        <Button
+            android:id="@+id/btn_diary"
+            android:drawableLeft="@drawable/diaryresize"
+            android:layout_width="400dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:text="일기쓰기"
+            android:textStyle="bold"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn_ga"
+            android:layout_width="400dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/garesize"
+            android:text="가계부 작성하기"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_memo"
+            android:drawableLeft="@drawable/memoresize"
+            android:layout_width="400dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:text="메모"
+            android:textStyle="bold"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn_daily"
+            android:drawableLeft="@drawable/todoresize"
+            android:layout_width="400dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:text="Daily to do"
+            android:textStyle="bold"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn_monthly"
+            android:drawableLeft="@drawable/monthlyresize"
+            android:layout_width="400dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:text="Monthly to do"
+            android:textStyle="bold"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="25dp" />
+
+
+     </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
