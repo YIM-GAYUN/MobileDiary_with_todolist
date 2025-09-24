@@ -1,7 +1,7 @@
 ## 모바일 프로그래밍 프로젝트
 #### 전자 다이어리 구현하기
 ###### Language: Java
-
+<!--
 <img src="https://github.com/GAYUN-YIM/MyDiary/assets/160388960/1de77753-a2ef-41f4-a6ac-62cd9d31e31e" width="400" height="250"/>
 <img src="https://github.com/GAYUN-YIM/MyDiary/assets/160388960/da839e69-a7e7-4336-aa40-83475537ff96" width="400" height="250"/>
 <img src="https://github.com/GAYUN-YIM/MyDiary/assets/160388960/efcded29-5d5e-43b8-a899-e30be4509aeb" width="400" height="250"/>
@@ -17,5 +17,5 @@
 <img src="https://github.com/GAYUN-YIM/MyDiary/assets/160388960/53519312-1121-4eb2-af20-d6bd1b5775c0" width="400" height="250"/>
 <img src="https://github.com/GAYUN-YIM/MyDiary/assets/160388960/b96ff821-cd89-446d-b72e-9cf7c54623c8" width="400" height="250"/>
 <img src="https://github.com/GAYUN-YIM/MyDiary/assets/160388960/dfcfab8f-4c5d-4171-8047-4c0f4818f966" width="400" height="250"/>
-
+-->
 
